@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg">
+    <com.example.view.TitleBar 
+        android:id="@+id/title_bar"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"/>
+
+    <EditText
+        android:id="@+id/nam2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/txt_input"
+        android:layout_margin="20dp"
+        android:hint="@string/register_name"/>
+    
+  <Spinner android:id="@+id/sex2"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/txt_input"
+           android:layout_margin="20dp"
+           android:entries="@array/sex"
+           android:prompt="@string/register_sex" ></Spinner>
+
+    <EditText
+        android:id="@+id/age2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@drawable/txt_input"
+        android:hint="@string/register_age"
+        android:layout_margin="20dp"
+        android:maxLength="3"/>
+
+    <EditText
+        android:id="@+id/guardian_tel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@drawable/txt_input" 
+        android:hint="@string/guardian_tel"
+        android:layout_margin="20dp"/>
+    
+        <Button
+        android:id="@+id/finish"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/register_finish"
+        android:background="@drawable/button"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+</LinearLayout>

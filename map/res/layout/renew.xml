@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TextView
+        android:id="@+id/rname3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号" />
+
+    <EditText
+        android:id="@+id/rname4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/rnumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="序列号" />
+
+    <EditText
+        android:id="@+id/rnumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+     <TextView
+        android:id="@+id/rpassword1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原密码" />
+
+    <EditText
+        android:id="@+id/rpassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+    
+    <TextView
+        android:id="@+id/rpassword3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码" />
+
+    <EditText
+        android:id="@+id/rpassword4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+    
+    <TextView android:id="@+id/rsex1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+    </TextView>
+  <Spinner android:id="@+id/rsex2"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"></Spinner>
+    
+  <TextView
+        android:id="@+id/rage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年龄" />
+
+    <EditText
+        android:id="@+id/rage2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+    
+    <TextView
+        android:id="@+id/rguardian1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="监护人姓名" />
+
+    <EditText
+        android:id="@+id/rguardian2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+    </EditText>
+        <TextView
+        android:id="@+id/rguardian_tel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="监护人联系方式" />
+
+    <EditText
+        android:id="@+id/rguardian_tel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+        
+    <Button
+        android:id="@+id/rsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存" />
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg">
+    
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name" 
+        android:autoLink="all" 
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+       android:layout_marginTop="30dp"
+       android:textColor="@color/white"/>
+    
+        <LinearLayout
+        android:id="@+id/ll_center"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:layout_below="@id/name"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:id="@+id/ce_locations"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_friend"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/locations" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_friend"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="@string/change_locations"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ce_heart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/heart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/change_heart" 
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/l_center"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/ll_center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp" >
+        <RelativeLayout
+            android:id="@+id/ce_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_group"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/message" />
+
+           <!--  <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.4"
+                android:background="#EFEFF4" /> -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_group"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="@string/change_message"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ce_set"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_discuss"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/set" />
+
+            <!-- <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.4"
+                android:background="#EFEFF4" /> -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_discuss"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/change_set"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+        
+</RelativeLayout>

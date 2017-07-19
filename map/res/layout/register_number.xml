@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg">
+    <com.example.view.TitleBar 
+        android:id="@+id/title_bar"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"/>
+
+    <EditText
+        android:id="@+id/rr_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10" 
+        android:inputType="number"
+        android:background="@drawable/txt_input"
+        android:hint="@string/register_telephone"
+        android:layout_margin="20dp"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/rr_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10" 
+        android:inputType="number"
+        android:background="@drawable/txt_input"
+        android:hint="@string/register_number"
+        android:layout_below="@id/rr_telephone"
+        android:layout_margin="20dp"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/rr_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10" 
+        android:inputType="number"
+        android:background="@drawable/txt_input"
+        android:hint="@string/register_password"
+        android:layout_margin="20dp"
+        android:layout_below="@id/rr_number"
+        android:padding="5dp" />
+    
+    <Button
+        android:id="@+id/next"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/register_next"
+        android:layout_below="@id/rr_password"
+        android:background="@drawable/button"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
